@@ -54,6 +54,41 @@ const config: Config = {
         },
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {from: '/docs/visao', to: '/docs/projeto/visao'},
+          {from: '/docs/visao/diagramas', to: '/docs/projeto/diagramas'},
+          {from: '/docs/rf', to: '/docs/requisitos/RF'},
+          {from: '/docs/rnf', to: '/docs/requisitos/RNF'},
+          {from: '/docs/rn', to: '/docs/requisitos/RN'},
+          {from: '/docs/uc', to: '/docs/requisitos/UC'},
+          {from: '/docs/er', to: '/docs/modelagem/ER'},
+          {from: '/docs/adr', to: '/docs/desenvolvimento/ADR'},
+          {
+            from: '/docs/adr/0001-arquitetura-e-stack',
+            to: '/docs/desenvolvimento/ADR/ADR-0001-arquitetura-e-stack',
+          },
+          {
+            from: '/docs/adr/0002-estrutura-de-repositorios',
+            to: '/docs/desenvolvimento/ADR/ADR-0002-estrutura-de-repositorios',
+          },
+          {
+            from: '/docs/adr/0003-workflow-de-desenvolvimento',
+            to: '/docs/desenvolvimento/ADR/ADR-0003-workflow-de-desenvolvimento',
+          },
+          {from: '/docs/templates/index', to: '/docs/gestao/artefatos'},
+          {from: '/docs/templates', to: '/docs/gestao/artefatos'},
+          {from: '/docs/templates/template-adr', to: '/docs/gestao/templates/template-adr'},
+          {from: '/docs/templates/template-rf', to: '/docs/gestao/templates/template-rf'},
+          {from: '/docs/templates/template-rnf', to: '/docs/gestao/templates/template-rnf'},
+          {from: '/docs/templates/template-rn', to: '/docs/gestao/templates/template-rn'},
+          {from: '/docs/templates/template-uc', to: '/docs/gestao/templates/template-uc'},
+          {from: '/docs/templates/template-er', to: '/docs/gestao/templates/template-er'},
+        ],
+      },
+    ],
   ],
 
   presets: [
@@ -114,7 +149,7 @@ const config: Config = {
           items: [
             {
               label: 'Engenharia',
-              to: '/docs/visao',
+              to: '/docs/projeto/visao',
             },
             {
               label: 'API',

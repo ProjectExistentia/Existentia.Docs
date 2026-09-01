@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+unlisted: true
 ---
 
 # ADR 0002 — Estrutura de Repositórios
@@ -47,4 +48,4 @@ Nomenclatura em **Pascal.Dot**, consistente com o ecossistema .NET.
 
 ## Links
 
-- [ADR 0001 — Stack e Arquitetura](arquitetura-e-stack)
+- [ADR 0001 — Stack e Arquitetura](ADR-0001-arquitetura-e-stack)
