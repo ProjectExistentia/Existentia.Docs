@@ -1,0 +1,67 @@
+name: Board de projetos
+
+on:
+  issues:
+    types: [opened, reopened, closed]
+  pull_request:
+    types: [opened, reopened, ready_for_review, closed]
+
+permissions:
+  contents: read
+
+jobs:
+  update-board:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Token do GitHub App
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ProjectExistentia
+
+      - name: Adicionar ao projeto
+        id: add-to-project
+        uses: actions/add-to-project@v1
+        with:
+          project-url: https://github.com/orgs/ProjectExistentia/projects/1
+          github-token: ${{ steps.app-token.outputs.token }}
+
+      - name: Definir campos Status e Area
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          ITEM_ID: ${{ steps.add-to-project.outputs.itemId }}
+          STATUS_ID: ""
+        run: |
+          if [ "${{ github.event_name }}" = "issues" ]; then
+            case "${{ github.event.action }}" in
+              closed)   STATUS_ID="f837976e" ;; # Concluido
+              reopened) STATUS_ID="0ea0f514" ;; # Backlog
+              *)        STATUS_ID="0ea0f514" ;; # Backlog
+            esac
+          else
+            case "${{ github.event.action }}" in
+              opened)          STATUS_ID="971d4a0a" ;; # Em andamento
+              reopened)        STATUS_ID="971d4a0a" ;; # Em andamento
+              ready_for_review) STATUS_ID="7a4ba737" ;; # Em revisao
+              closed)          STATUS_ID="f837976e" ;; # Concluido
+              *)               STATUS_ID="971d4a0a" ;;
+            esac
+          fi
+
+          gh api graphql -f query='
+            mutation($item: ID!) {
+              status: updateProjectV2ItemFieldValue(input: {
+                projectId: "PVT_kwDOE0jJKs4BiGiN"
+                itemId: $item
+                fieldId: "PVTSSF_lADOE0jJKs4BiGiNzhg_wzQ"
+                value: { singleSelectOptionId: "'"$STATUS_ID"'" }
+              }) { projectV2Item { id } }
+              area: updateProjectV2ItemFieldValue(input: {
+                projectId: "PVT_kwDOE0jJKs4BiGiN"
+                itemId: $item
+                fieldId: "PVTSSF_lADOE0jJKs4BiGiNzhg_w20"
+                value: { singleSelectOptionId: "598b463d" }
+              }) { projectV2Item { id } }
+            }' -f item="$ITEM_ID"
