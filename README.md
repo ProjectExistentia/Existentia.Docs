@@ -43,7 +43,9 @@ GitHub Pages via GitHub Actions (push em `docs/` ou `main` dispara
 
 ## Backlog — melhorias futuras (home)
 
-- [ ] **Busca** no site (`docusaurus-search-local` ou Algolia DocSearch)
-- [ ] **Últimas atualizações** na home (widget lendo `last_update`/git)
-- [ ] **Cards com ícone** nas seções da home
-- [ ] **Badge de status** por seção (front matter)
+Acompanhe e priorize no [board de projetos](../board). Issues de referência:
+
+- [#5 — Busca no site](https://github.com/ProjectExistentia/Existentia.Docs/issues/5) (`docusaurus-search-local` ou Algolia DocSearch)
+- [#7 — Últimas atualizações](https://github.com/ProjectExistentia/Existentia.Docs/issues/7) na home (widget lendo `last_update`/git)
+- [#6 — Cards com ícone](https://github.com/ProjectExistentia/Existentia.Docs/issues/6) nas seções da home
+- [#8 — Badge de status](https://github.com/ProjectExistentia/Existentia.Docs/issues/8) por seção (front matter)
