@@ -1,0 +1,26 @@
+openapi: '3.0.3'
+info:
+  title: Existentia API
+  description: API REST do jogo Existentia.
+  version: '0.1.0'
+servers:
+  - url: https://localhost:5001
+paths:
+  /api/health:
+    get:
+      operationId: getHealth
+      summary: Health check
+      description: Verifica se a API está de pé.
+      tags:
+        - Sistema
+      responses:
+        '200':
+          description: API saudável
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
