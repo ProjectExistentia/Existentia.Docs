@@ -39,7 +39,7 @@ npm run gen-api-docs jogo  # regenera docs da API a partir de openapi/jogo.yaml
 ## Deploy
 
 GitHub Pages via GitHub Actions (push em `docs/` ou `main` dispara
-`.github/workflows/deploy.yml`). Site: <https://thesirleaf.github.io/Existentia.Docs/>
+`.github/workflows/deploy.yml`). Site: <https://projectexistentia.github.io/Existentia.Docs/>
 
 ## Backlog — melhorias futuras (home)
 
