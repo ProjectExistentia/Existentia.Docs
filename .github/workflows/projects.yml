@@ -23,7 +23,7 @@ jobs:
 
       - name: Adicionar ao projeto
         id: add-to-project
-        uses: actions/add-to-project@v1
+        uses: actions/add-to-project@v1.0.1
         with:
           project-url: https://github.com/orgs/ProjectExistentia/projects/1
           github-token: ${{ steps.app-token.outputs.token }}
