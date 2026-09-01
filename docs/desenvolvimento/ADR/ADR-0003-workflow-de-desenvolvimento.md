@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+unlisted: true
 ---
 
 # ADR 0003 — Workflow de Desenvolvimento
@@ -40,4 +41,4 @@ disciplinado desde o início.
 
 ## Links
 
-- [ADR 0002 — Estrutura de Repositórios](estrutura-de-repositorios)
+- [ADR 0002 — Estrutura de Repositórios](ADR-0002-estrutura-de-repositorios)

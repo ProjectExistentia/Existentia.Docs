@@ -12,12 +12,12 @@ consistência e rastreabilidade.
 
 | Artefato | Template | Finalidade |
 |---|---|---|
-| ADR | [template-adr](template-adr) | Decisão de arquitetura (formato MADR) |
-| RF | [template-rf](template-rf) | Requisito funcional |
-| RNF | [template-rnf](template-rnf) | Requisito não funcional |
-| RN | [template-rn](template-rn) | Regra de negócio |
-| UC | [template-uc](template-uc) | Caso de uso |
-| ER | [template-er](template-er) | Entidade do modelo |
+| ADR | [template-adr](templates/template-adr) | Decisão de arquitetura (formato MADR) |
+| RF | [template-rf](templates/template-rf) | Requisito funcional |
+| RNF | [template-rnf](templates/template-rnf) | Requisito não funcional |
+| RN | [template-rn](templates/template-rn) | Regra de negócio |
+| UC | [template-uc](templates/template-uc) | Caso de uso |
+| ER | [template-er](templates/template-er) | Entidade do modelo |
 
 ## Convenções
 

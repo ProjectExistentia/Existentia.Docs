@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/visao">
+            to="/docs/projeto/visao">
             Visão do projeto
           </Link>
         </div>
@@ -36,29 +36,29 @@ type Section = {
 
 const Sections: Section[] = [
   {
-    title: 'Visão',
-    to: '/docs/visao',
-    description: 'Objetivo, escopo e contexto do Existentia.',
+    title: 'Projeto',
+    to: '/docs/projeto/visao',
+    description: 'Visão, escopo e diagramas de contexto do Existentia.',
   },
   {
     title: 'Requisitos',
-    to: '/docs/rf',
-    description: 'Requisitos funcionais (RF), não funcionais (RNF) e regras de negócio (RN).',
+    to: '/docs/requisitos/RF',
+    description: 'Requisitos funcionais (RF), não funcionais (RNF), regras de negócio (RN) e casos de uso (UC).',
   },
   {
-    title: 'Casos de uso',
-    to: '/docs/uc',
-    description: 'Modelagem de casos de uso (UC) do sistema.',
+    title: 'Modelagem',
+    to: '/docs/modelagem/ER',
+    description: 'Modelo entidade-relacionamento (ER) e diagramas de domínio.',
   },
   {
-    title: 'Modelo de entidades',
-    to: '/docs/er',
-    description: 'Modelo entidade-relacionamento (ER) e diagramas.',
+    title: 'Desenvolvimento',
+    to: '/docs/desenvolvimento/ADR',
+    description: 'Decisões de arquitetura (ADRs) e guias de desenvolvimento.',
   },
   {
-    title: 'ADRs',
-    to: '/docs/adr',
-    description: 'Architecture Decision Records do projeto.',
+    title: 'Gestão',
+    to: '/docs/gestao/artefatos',
+    description: 'Padrão de artefatos e templates (ADR, RF, RNF, RN, UC, ER).',
   },
   {
     title: 'API',
