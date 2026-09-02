@@ -78,6 +78,18 @@ const config: Config = {
             from: '/docs/adr/0003-workflow-de-desenvolvimento',
             to: '/docs/desenvolvimento/ADR/ADR-0003-workflow-de-desenvolvimento',
           },
+          {
+            from: '/docs/desenvolvimento/ADR-0001-arquitetura-e-stack',
+            to: '/docs/desenvolvimento/ADR/ADR-0001-arquitetura-e-stack',
+          },
+          {
+            from: '/docs/desenvolvimento/ADR-0002-estrutura-de-repositorios',
+            to: '/docs/desenvolvimento/ADR/ADR-0002-estrutura-de-repositorios',
+          },
+          {
+            from: '/docs/desenvolvimento/ADR-0003-workflow-de-desenvolvimento',
+            to: '/docs/desenvolvimento/ADR/ADR-0003-workflow-de-desenvolvimento',
+          },
           {from: '/docs/templates/index', to: '/docs/gestao/artefatos'},
           {from: '/docs/templates', to: '/docs/gestao/artefatos'},
           {from: '/docs/templates/template-adr', to: '/docs/gestao/templates/template-adr'},
