@@ -1,15 +1,18 @@
 ---
 sidebar_position: 6
+codigo: UC-001
+description: Resumo curto do objetivo do caso de uso.
+prioridade: Essencial
+status: Proposto
 ---
 
 # Template de UC
 
-> Copie este arquivo para `docs/uc/UC-NNN-nome.md`.
-
-# UC-001 — Título do caso de uso
-
-- **Status:** Proposto | Aprovado | Implementado | Deprecado
-- **Atores:** Ator principal; atores secundários
+> Copie este arquivo para `docs/requisitos/UC/UC-NNN-nome.md`.
+>
+> ⚙️ A tabela do índice [Casos de Uso](/docs/requisitos/UC) é **gerada
+> automaticamente** a partir dos arquivos desta pasta. Preencha no frontmatter:
+> `codigo`, `description`, `prioridade` e `status`.
 
 ## Fluxo principal
 
@@ -20,6 +23,10 @@ sidebar_position: 6
 
 - **Fluxo alternativo A:** ...
 - **Exceção:** ...
+
+## Atores
+
+Atores principais e secundários.
 
 ## Pré-condições
 
