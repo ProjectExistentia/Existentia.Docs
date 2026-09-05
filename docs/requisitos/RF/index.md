@@ -1,11 +1,11 @@
+import RequisitosTable from '@site/src/components/RequisitosTable';
+
 # Requisitos Funcionais (RF)
 
 Esta seção reúne os **requisitos funcionais** do sistema. Cada RF descreve uma
 capacidade que o sistema deve prover.
 
-| ID | Resumo | Prioridade | Status | Detalhes |
-|----|--------|-----------|--------|----------|
-| —  | *Em construção* | — | — | — |
+<RequisitosTable type="RF" />
 
 > Os requisitos serão extraídos do domínio definido no `Existentia.Lore`
 > (fonte canônica) e detalhados em páginas individuais, acessíveis pelos links

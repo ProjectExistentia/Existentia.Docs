@@ -38,6 +38,7 @@ const config: Config = {
   ],
 
   plugins: [
+    require.resolve('./plugins/existentia-requisitos'),
     [
       'docusaurus-plugin-openapi-docs',
       {
